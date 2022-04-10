@@ -2,9 +2,9 @@
 	<div class="main-navbar-container">
 		<a href="#" class="logo-container"><img src="@/assets/logo.svg" alt="" class="logo" /></a>
 		<div class="links-container">
-			<a class="link" href="Home">Home</a>
-			<a class="link" href="About">About</a>
-			<a class="link" href="Contact">Contact</a>
+			<router-link class="link" to="Home">Home</router-link>
+			<router-link class="link" to="About">About</router-link>
+			<router-link class="link" to="Contact">Contact</router-link>
 		</div>
 		<div class="buttons-container">
 			<rect-button class="button" content="Login"></rect-button>
@@ -28,7 +28,8 @@ const nombre = "test";
 	height: 90px;
 
 	background-color: #3db92d;
-	color: white;
+	/* background-color: #3db92d; */
+	color: #fff;
 }
 
 .main-navbar-container .logo-container {
