@@ -4,6 +4,7 @@ import MainProduct from "@/components/MainProduct.vue";
 import Carrousel from "@/components/Carrousel.vue";
 import Sections from "@/components/Sections.vue";
 import CommentsSection from "@/components/CommentsSection.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
@@ -13,5 +14,6 @@ import CommentsSection from "@/components/CommentsSection.vue";
 		<Carrousel />
 		<Sections />
 		<CommentsSection />
+		<Footer />
 	</main>
 </template>
