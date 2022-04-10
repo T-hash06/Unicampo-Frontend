@@ -33,6 +33,8 @@ const nombre = "test";
 	top: 0px;
 	left: 0px;
 	z-index: 100;
+
+	box-shadow: 0px 0px 15px #000;
 }
 
 .main-navbar-container .logo-container {
@@ -57,6 +59,8 @@ const nombre = "test";
 
 	font-size: 20px;
 	transition-duration: 100ms;
+
+	font-weight: 600;
 }
 
 .main-navbar-container .link:hover {
