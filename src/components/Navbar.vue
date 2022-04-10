@@ -76,4 +76,8 @@ const nombre = "test";
 	height: 50px;
 	margin: 10px;
 }
+
+.main-navbar-container .link.router-link-active {
+	color: #fff;
+}
 </style>

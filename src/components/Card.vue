@@ -1,7 +1,7 @@
 <template>
 	<div class="card-container">
 		<div class="card-image-container">
-			<img class="card-image" src="@/assets/logo.svg" alt="" />
+			<img class="card-image" src="@/assets/logo.svg" />
 		</div>
 		<h1 class="card-title">{{ title }}</h1>
 		<p class="card-description">
@@ -17,7 +17,7 @@
 				<h6 class="text">{{ quantity }}</h6>
 				<button class="count-button" @click="update(1)"></button>
 			</div>
-			<h6 class="total-text">{{ total }}</h6>
+			<h6 class="total-text">$ {{ total }}</h6>
 			<h6 class="delivery-text">{{ delivery }}</h6>
 		</div>
 		<RectButton class="card-button" content="Buy" main />
@@ -65,6 +65,10 @@ const update = (iter) => {
 	overflow: hidden;
 	width: 80%;
 	height: 80%;
+}
+
+.card-image-container img {
+	width: 100%;
 }
 
 .card-title {
@@ -143,6 +147,7 @@ const update = (iter) => {
 	align-self: center;
 	font-size: 16px;
 }
+
 .card-options .delivery-text {
 	justify-self: center;
 	align-self: center;

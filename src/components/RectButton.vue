@@ -5,11 +5,6 @@
 </template>
 
 <script setup>
-// export default {
-// 	props: { content: String },
-// 	setup(props) {},
-// };
-
 import { ref } from "vue";
 const props = defineProps({
 	content: { type: String, default: "Default Button" },
@@ -38,19 +33,20 @@ const props = defineProps({
 	font-size: 17px;
 
 	transition-duration: 150ms;
+	font-weight: 600;
 }
 
 .main-button-container.main > button {
-	background-color: #fff;
-	color: #3db92d;
+	background-color: #74e39a;
+	color: #181818;
 	box-shadow: 0px 0px 20px #00000081;
 
 	border: 2px solid transparent;
 }
 
 .main-button-container.main > button:hover {
-	background-color: #005a31;
-	color: #ffffff;
+	background-color: #fff;
+	color: #3db92d;
 }
 
 .main-button-container > button:hover {

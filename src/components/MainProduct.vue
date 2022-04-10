@@ -1,9 +1,9 @@
 <template>
 	<div class="main-product">
-		<img src="@/assets/logo.svg" alt="" class="back-image" />
+		<img src="@/assets/main-image.jpg" alt="" class="back-image" />
 		<div class="filter"></div>
 		<div class="data-container">
-			<h1 class="title">Product</h1>
+			<h1 class="title">Unicampo</h1>
 			<p class="description">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis provident esse maxime, necessitatibus tempora, iure
 				quae, quaerat aliquam possimus facilis repudiandae deleniti fuga perferendis non illo reprehenderit facere? Dicta
@@ -27,8 +27,6 @@ import RectButton from "@/components/RectButton.vue";
 
 	overflow: hidden;
 
-	background-color: antiquewhite;
-
 	display: flex;
 	justify-content: left;
 	align-items: center;
@@ -36,12 +34,15 @@ import RectButton from "@/components/RectButton.vue";
 
 .main-product .back-image {
 	position: absolute;
+	height: 100%;
 	width: 100%;
+	object-fit: cover;
 }
 
 .main-product .filter {
 	position: absolute;
-	background-color: #222222a8;
+	background-color: #2222226e;
+	/* background-color: #222222a8; */
 
 	width: 100%;
 	height: 100%;
@@ -50,7 +51,7 @@ import RectButton from "@/components/RectButton.vue";
 
 .main-product .data-container {
 	display: grid;
-	grid-template-rows: 80px 180px 80px;
+	grid-template-rows: 80px 185px 80px;
 
 	width: 100%;
 	max-width: 620px;
@@ -64,11 +65,13 @@ import RectButton from "@/components/RectButton.vue";
 	color: #fff;
 
 	font-size: 50px;
+	font-weight: 600;
 }
 
 .main-product .description {
-	font-size: 19px;
+	font-size: 18px;
 	color: #dbdbdb;
+	line-height: 30px;
 
 	text-align: justify;
 }

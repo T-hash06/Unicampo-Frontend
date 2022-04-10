@@ -1,10 +1,10 @@
 <template>
 	<div class="carrousel-container">
-		<h1 class="carrousel-title">Lorem ipsum dolor sit.</h1>
+		<h1 class="carrousel-title">Por mas productos del campo!</h1>
 		<div class="cards-container">
-			<Card :value="15" title="Apple" />
-			<Card :value="20" />
-			<Card :value="10" />
+			<Card :value="15" title="Apple" delivery="Unicampo" />
+			<Card :value="20" title="Apple" delivery="Unicampo" />
+			<Card :value="10" title="Apple" delivery="Unicampo" />
 		</div>
 	</div>
 </template>
@@ -16,14 +16,15 @@ import Card from "@/components/Card.vue";
 <style scoped>
 .carrousel-container {
 	display: grid;
-	grid-template-rows: 100px auto;
+	grid-template-rows: 120px auto;
 	margin: 120px 0px;
 }
 
 .carrousel-title {
 	justify-self: center;
-	color: #dadada;
-	font-size: 34px;
+	color: #e2e2e2;
+	font-size: 38px;
+	font-weight: 600;
 }
 
 .cards-container {
