@@ -11,7 +11,7 @@
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et illo nulla dolores in, alias blanditiis nostrum eum amet
 				maiores sint ducimus nam perspiciatis, beatae commodi soluta, enim hic! Ab, veritatis!
 			</p>
-			<RectButton content="Show more" class="section-button" />
+			<RectButton content="Show more" class="section-button" main />
 		</div>
 		<template v-if="reverse">
 			<div class="section-image-container">
@@ -39,7 +39,7 @@ const props = defineProps({
 	max-width: 950px;
 	height: 400px;
 
-	box-shadow: 0px 0px 25px #000000;
+	box-shadow: 0px 0px 20px #000000;
 	grid-auto-flow: dense;
 }
 
@@ -76,7 +76,7 @@ const props = defineProps({
 	justify-self: center;
 	align-self: center;
 
-	font-size: 36px;
+	font-size: 38px;
 	color: #e4e4e4;
 	font-weight: 600;
 }

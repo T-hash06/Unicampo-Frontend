@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar.vue";
 import MainProduct from "@/components/MainProduct.vue";
 import Carrousel from "@/components/Carrousel.vue";
 import Sections from "@/components/Sections.vue";
+import CommentsSection from "@/components/CommentsSection.vue";
 </script>
 
 <template>
@@ -11,5 +12,6 @@ import Sections from "@/components/Sections.vue";
 		<MainProduct />
 		<Carrousel />
 		<Sections />
+		<CommentsSection />
 	</main>
 </template>
