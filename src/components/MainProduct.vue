@@ -9,7 +9,7 @@
 				quae, quaerat aliquam possimus facilis repudiandae deleniti fuga perferendis non illo reprehenderit facere? Dicta
 				temporibus accusamus cumque ea aspernatur corporis quas, necessitatibus distinctio sed voluptate.
 			</p>
-			<RectButton class="button" content="Button" />
+			<RectButton class="button" content="Show more" />
 		</div>
 	</div>
 </template>

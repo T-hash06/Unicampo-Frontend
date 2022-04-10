@@ -14,5 +14,7 @@ import { RouterLink, RouterView } from "vue-router";
 .main-div {
 	width: 100vw;
 	height: 100vh;
+
+	overflow-x: hidden;
 }
 </style>

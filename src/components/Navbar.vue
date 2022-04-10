@@ -8,7 +8,7 @@
 		</div>
 		<div class="buttons-container">
 			<rect-button class="button" content="Login"></rect-button>
-			<rect-button class="button" content="Signup"></rect-button>
+			<rect-button class="button" content="Signup" main></rect-button>
 		</div>
 	</div>
 </template>
@@ -27,9 +27,12 @@ const nombre = "test";
 	width: 100%;
 	height: 90px;
 
-	background-color: #3db92d;
+	background-color: #181818;
 	/* background-color: #3db92d; */
-	color: #fff;
+	position: sticky;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
 }
 
 .main-navbar-container .logo-container {
@@ -50,9 +53,14 @@ const nombre = "test";
 .main-navbar-container .link {
 	margin-left: 50px;
 	text-decoration: none;
-	color: white;
+	color: #b6b6b6;
 
 	font-size: 20px;
+	transition-duration: 100ms;
+}
+
+.main-navbar-container .link:hover {
+	color: #ffffff;
 }
 
 .main-navbar-container .buttons-container {

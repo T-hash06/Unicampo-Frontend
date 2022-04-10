@@ -1,14 +1,20 @@
 <template>
-	<div class="main-button-container">
-		<button class="">{{ content }}</button>
+	<div class="main-button-container" :class="{ main }">
+		<button>{{ content }}</button>
 	</div>
 </template>
 
-<script>
-export default {
-	props: { content: String },
-	setup(props) {},
-};
+<script setup>
+// export default {
+// 	props: { content: String },
+// 	setup(props) {},
+// };
+
+import { ref } from "vue";
+const props = defineProps({
+	content: { type: String, default: "Default Button" },
+	main: { type: Boolean, default: false },
+});
 </script>
 
 <style scoped>
@@ -32,6 +38,19 @@ export default {
 	font-size: 17px;
 
 	transition-duration: 150ms;
+}
+
+.main-button-container.main > button {
+	background-color: #fff;
+	color: #3db92d;
+	box-shadow: 0px 0px 20px #00000081;
+
+	border: 2px solid transparent;
+}
+
+.main-button-container.main > button:hover {
+	background-color: #005a31;
+	color: #ffffff;
 }
 
 .main-button-container > button:hover {
