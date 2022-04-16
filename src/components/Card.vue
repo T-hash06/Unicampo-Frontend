@@ -1,7 +1,7 @@
 <template>
 	<div class="card-container">
 		<div class="card-image-container">
-			<img class="card-image" src="@/assets/logo.svg" />
+			<img class="card-image" :src="image" />
 		</div>
 		<h1 class="card-title">{{ title }}</h1>
 		<p class="card-description">
@@ -32,6 +32,8 @@ const props = defineProps({
 	title: { type: String, default: "Product" },
 	value: { type: Number, default: 10 },
 	delivery: { type: String, default: "Default" },
+	image: { type: String, default: "src/assets/logo.svg" },
+	scale: { type: Number, default: 1 },
 });
 
 const quantity = ref(1);
@@ -59,18 +61,27 @@ const update = (iter) => {
 }
 
 .card-image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	justify-self: center;
 	align-self: center;
 
-	overflow: hidden;
 	width: 80%;
 	height: 80%;
 }
 
 .card-image-container img {
 	width: 100%;
-	height: 100%;
-	object-fit: fill;
+	width: calc(v-bind(scale) * 100%);
+	object-fit: cover;
+
+	transition-duration: 450ms;
+}
+
+.card-container:hover .card-image-container img {
+	transform: scale(1.3);
 }
 
 .card-title {
