@@ -39,7 +39,7 @@ const props = defineProps({
 	max-width: 950px;
 	height: 400px;
 
-	box-shadow: 0px 0px 20px #000000;
+	box-shadow: 0px 0px 20px var(--shadow-color);
 	grid-auto-flow: dense;
 }
 

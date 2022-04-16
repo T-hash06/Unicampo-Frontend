@@ -83,11 +83,11 @@ import Navbar from "@/components/Navbar.vue";
 
 .main-division,
 .group-division {
-	box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px var(--shadow-color);
 	width: 100%;
 	max-width: 1024px;
 
-	background-color: #101010;
+	background-color: var(--bg-color-dark);
 	padding: 80px 0px;
 	margin-top: 40px;
 
@@ -141,13 +141,13 @@ import Navbar from "@/components/Navbar.vue";
 	display: grid;
 	grid-template-rows: 170px 90px auto 86px;
 	width: 70%;
-	max-width: 430px;
+	max-width: 440px;
 	height: 490px;
 }
 
 .member-div .image-container {
 	justify-self: center;
-	box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px var(--shadow-color);
 	border-radius: 50%;
 
 	width: 150px;

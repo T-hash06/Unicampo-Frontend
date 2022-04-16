@@ -50,7 +50,7 @@ const update = (iter) => {
 	height: 600px;
 
 	border-radius: 10px;
-	box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 16px var(--shadow-color);
 
 	display: grid;
 	grid-template-rows: 40% 80px 130px auto 70px;
@@ -137,7 +137,7 @@ const update = (iter) => {
 	outline: none;
 
 	background-color: transparent;
-	box-shadow: 0px 0px 10px #000000;
+	box-shadow: 0px 0px 10px var(--shadow-color);
 	color: #fff;
 	font-size: 18px;
 

@@ -19,8 +19,8 @@
 	grid-template-rows: 40% auto 40px;
 
 	height: 200px;
-	background-color: #202020;
-	box-shadow: 0px 0px 20px #101010;
+	background-color: var(--bg-color);
+	box-shadow: 0px 0px 20px var(--shadow-color);
 }
 
 .footer-title {
@@ -46,7 +46,7 @@
 	width: 55px;
 	height: 55px;
 	border-radius: 50%;
-	background-color: #303030;
+	background-color: var(--bg-color-light);
 }
 
 .footer-social .link img {

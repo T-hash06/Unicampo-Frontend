@@ -27,14 +27,14 @@ const nombre = "test";
 	width: 100%;
 	height: 90px;
 
-	background-color: #181818;
+	background-color: var(--bg-color);
 	/* background-color: #3db92d; */
 	position: sticky;
 	top: 0px;
 	left: 0px;
 	z-index: 100;
 
-	box-shadow: 0px 0px 15px #000;
+	box-shadow: 0px 0px 15px var(--shadow-color);
 }
 
 .main-navbar-container .logo-container {

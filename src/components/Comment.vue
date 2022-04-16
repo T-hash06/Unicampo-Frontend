@@ -25,7 +25,7 @@ const props = defineProps({
 
 	width: 500px;
 	height: 400px;
-	box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px var(--shadow-color);
 }
 
 .comment-title {
@@ -59,7 +59,7 @@ const props = defineProps({
 .stars-container .temp {
 	width: 50%;
 	height: 40px;
-	background-color: #202020;
+	background-color: var(--bg-color);
 }
 
 .comment-autor {

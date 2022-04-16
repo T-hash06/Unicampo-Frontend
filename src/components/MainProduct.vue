@@ -1,6 +1,6 @@
 <template>
 	<div class="main-product">
-		<img src="@/assets/main-image.jpg" alt="" class="back-image" />
+		<img src="@/assets/main-image-min.jpg" alt="" class="back-image" />
 		<div class="filter"></div>
 		<div class="data-container">
 			<h1 class="title">Unicampo</h1>
