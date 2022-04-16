@@ -2,9 +2,9 @@
 	<div class="main-footer-container">
 		<h1 class="footer-title">Follow Us!</h1>
 		<div class="footer-social">
-			<a href="#" class="link"><img src="@/assets/logo.svg" /></a>
-			<a href="#" class="link"><img src="@/assets/logo.svg" /></a>
-			<a href="#" class="link"><img src="@/assets/logo.svg" /></a>
+			<a href="#" class="link"><iconFacebook :scale="0.8" /></a>
+			<a href="#" class="link"><iconTwitter :scale="0.75" /></a>
+			<a href="#" class="link"><iconInstagram :scale="0.7" /></a>
 		</div>
 		<div class="footer-links">
 			<a href="#">privacy policy</a>
@@ -12,6 +12,12 @@
 		</div>
 	</div>
 </template>
+
+<script setup>
+import iconFacebook from "@/components/icons/iconFacebook.vue";
+import iconTwitter from "@/components/icons/iconTwitter.vue";
+import iconInstagram from "@/components/icons/iconInstagram.vue";
+</script>
 
 <style scoped>
 .main-footer-container {
@@ -49,9 +55,16 @@
 	background-color: var(--bg-color-light);
 }
 
-.footer-social .link img {
-	width: 30px;
+.footer-social .link svg {
+	height: 80%;
+	object-fit: cover;
 	filter: grayscale(100%);
+
+	transition-duration: 250ms;
+}
+
+.footer-social .link:hover svg {
+	filter: none;
 }
 
 .footer-links {

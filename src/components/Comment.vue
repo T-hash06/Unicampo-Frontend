@@ -59,7 +59,7 @@ const props = defineProps({
 .stars-container .temp {
 	width: 50%;
 	height: 40px;
-	background-color: var(--bg-color);
+	background-color: var(--bg-color-light);
 }
 
 .comment-autor {

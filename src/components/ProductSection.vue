@@ -2,7 +2,7 @@
 	<div class="section-container" :class="{ reverse }">
 		<template v-if="!reverse">
 			<div class="section-image-container">
-				<img src="@/assets/logo.svg" alt="" class="section-image" />
+				<img :src="image" alt="" class="section-image" />
 			</div>
 		</template>
 		<div class="section-text-container">
@@ -15,7 +15,7 @@
 		</div>
 		<template v-if="reverse">
 			<div class="section-image-container">
-				<img src="@/assets/logo.svg" alt="" class="section-image" />
+				<img :src="image" alt="" class="section-image" />
 			</div>
 		</template>
 	</div>
@@ -26,7 +26,9 @@ import RectButton from "@/components/RectButton.vue";
 
 const props = defineProps({
 	title: { type: String, default: "Section Title" },
+	image: { type: String, default: "src/assets/logo.svg" },
 	reverse: { type: Boolean, default: false },
+	scale: { type: Number, default: 1 },
 });
 </script>
 
@@ -40,7 +42,8 @@ const props = defineProps({
 	height: 400px;
 
 	box-shadow: 0px 0px 20px var(--shadow-color);
-	grid-auto-flow: dense;
+
+	border-radius: 10px;
 }
 
 .section-container.reverse {
@@ -60,8 +63,8 @@ const props = defineProps({
 }
 
 .section-image-container .section-image {
-	width: auto;
-	height: auto;
+	width: 100%;
+	width: calc(v-bind(scale) * 100%);
 	object-fit: cover;
 }
 
