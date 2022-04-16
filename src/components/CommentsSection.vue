@@ -1,8 +1,8 @@
 <template>
 	<div class="main-comments-section">
-		<Comment />
-		<Comment />
-		<Comment />
+		<Comment :stars="4" />
+		<Comment :stars="5" />
+		<Comment :stars="4" />
 	</div>
 </template>
 

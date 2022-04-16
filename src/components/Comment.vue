@@ -5,17 +5,25 @@
 			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum corporis itaque quae eveniet deserunt aut.
 		</p>
 		<div class="stars-container">
-			<div class="temp"></div>
+			<iconStar v-for="star in filledStars" :key="star" filled />
+			<iconStar v-for="star in outlineStars" :key="star" />
 		</div>
 		<h3 class="comment-autor">{{ autor }}</h3>
 	</div>
 </template>
 
 <script setup>
+import { ref } from "vue";
+import iconStar from "@/components/icons/iconStar.vue";
+
 const props = defineProps({
 	title: { type: String, default: "Comment Title" },
 	autor: { type: String, default: "Comment Autor" },
+	stars: { type: Number, default: 0 },
 });
+
+const filledStars = props.stars > 5 ? 5 : props.stars;
+const outlineStars = 5 - filledStars;
 </script>
 
 <style scoped>
@@ -56,11 +64,11 @@ const props = defineProps({
 	width: 80%;
 }
 
-.stars-container .temp {
+/* .stars-container .temp {
 	width: 50%;
 	height: 40px;
 	background-color: var(--bg-color-light);
-}
+} */
 
 .comment-autor {
 	width: 80%;
