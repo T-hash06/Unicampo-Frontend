@@ -34,19 +34,20 @@
 			<h1 class="title">Leadership</h1>
 			<div class="member-div">
 				<div class="image-container">
-					<img src="@/assets/logo.svg" alt="" />
+					<img src="@/assets/ceo.png" alt="" />
 				</div>
 				<div class="title-div">
-					<h1>Vue Company</h1>
-					<h3>Developer</h3>
+					<h1>Tomas Panqueva</h1>
+					<h3>CEO</h3>
 				</div>
 				<p class="description">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. A natus totam itaque error molestiae quis magnam ab nemo nulla
-					rem ipsum illum consequatur omnis, sunt, quasi id quisquam reprehenderit optio.
+					Soy un chico de 17 años que vive en Colombia. Mi hobbie desde pequeño suempre fueron los videojuegos y la programacion,
+					en esta última tengo experiencia en los lenguajes de programacion Python, C++, C#, Java, Javascript y Haskell, mi mayor
+					area de conociento es el desarrollo frontend con frameworks como VueJs, ReactJs y Svelt
 				</p>
 				<div class="favorite-apps">
 					<h3>Favorite Apps</h3>
-					<p>Lorem ipsum dolor sit amet.</p>
+					<p>VS Code, Valorant, Youtube.</p>
 				</div>
 			</div>
 			<div class="member-div">
@@ -142,7 +143,7 @@ import Navbar from "@/components/Navbar.vue";
 	grid-template-rows: 170px 90px auto 86px;
 	width: 70%;
 	max-width: 440px;
-	height: 490px;
+	height: 500px;
 }
 
 .member-div .image-container {
@@ -192,6 +193,9 @@ import Navbar from "@/components/Navbar.vue";
 	align-self: center;
 	text-align: center;
 	color: #c2c2c2;
+
+	/* min-height: 220px;
+	max-height: 220px; */
 }
 
 .member-div .favorite-apps {
