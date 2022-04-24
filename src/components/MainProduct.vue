@@ -5,11 +5,11 @@
 		<div class="data-container">
 			<h1 class="title">Unicampo</h1>
 			<p class="description">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis provident esse maxime, necessitatibus tempora, iure
-				quae, quaerat aliquam possimus facilis repudiandae deleniti fuga perferendis non illo reprehenderit facere? Dicta
-				temporibus accusamus cumque ea aspernatur corporis quas, necessitatibus distinctio sed voluptate.
+				Somos una empresa nueva con el objetivo de proveer servicios de contacto y transporte a todos los campesinos de colombia
+				con el fin de mejorar e implementar nuevas maneras de vender sus productos a traves de la tecnologia y las redes de
+				informcion permitiendo una mejor comunicacion y ofreciendo una experiencia rapida y agil para realizar sus operaciones
 			</p>
-			<RectButton class="button" content="Show more" />
+			<RectButton class="button" content="Leer mas" />
 		</div>
 	</div>
 </template>

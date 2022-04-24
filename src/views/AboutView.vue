@@ -3,29 +3,19 @@
 		<Navbar />
 		<div class="main-division">
 			<div class="mision-container">
-				<h1 class="title">- Our Mission -</h1>
+				<h1 class="title">- Nuentra Mision -</h1>
 				<p class="text">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti animi aliquam, blanditiis id quibusdam laboriosam
-					dolores quae officia soluta magni odio numquam voluptatum repellendus recusandae perspiciatis. At assumenda culpa
-					aperiam quibusdam nesciunt iusto minus id. Explicabo inventore repellat ad, reiciendis eum qui. Debitis eos nulla unde
-					ipsum cum, autem laudantium excepturi suscipit vero facilis cupiditate sequi praesentium eum sint nostrum error
-					necessitatibus voluptatibus rem ipsa. Iste animi id nulla sequi quae quam quasi ducimus vel harum dolorum repellat
-					temporibus, et dolor accusamus accusantium. Eaque magnam molestiae illum ea optio totam, voluptas inventore itaque
-					repellat reprehenderit cupiditate est dolore sapiente minus eveniet fugit alias aperiam adipisci. Necessitatibus dolores
-					tempora libero exercitationem.
+					Somos una plataforma digital dedicada a facilitar el intercambio comercial entre los productores del campo colombiano,
+					los grandes distribuidores y las cadenas de mercado a nivel nacional. Nuestro proposito es conectar al campo con la
+					ciudad a fin de suplir la demanda alimentaria que se genere en el pais.
 				</p>
 			</div>
 			<div class="vision-container">
-				<h1 class="title">- Our Vision -</h1>
+				<h1 class="title">- Nuentra Vision -</h1>
 				<p class="text">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti animi aliquam, blanditiis id quibusdam laboriosam
-					dolores quae officia soluta magni odio numquam voluptatum repellendus recusandae perspiciatis. At assumenda culpa
-					aperiam quibusdam nesciunt iusto minus id. Explicabo inventore repellat ad, reiciendis eum qui. Debitis eos nulla unde
-					ipsum cum, autem laudantium excepturi suscipit vero facilis cupiditate sequi praesentium eum sint nostrum error
-					necessitatibus voluptatibus rem ipsa. Iste animi id nulla sequi quae quam quasi ducimus vel harum dolorum repellat
-					temporibus, et dolor accusamus accusantium. Eaque magnam molestiae illum ea optio totam, voluptas inventore itaque
-					repellat reprehenderit cupiditate est dolore sapiente minus eveniet fugit alias aperiam adipisci. Necessitatibus dolores
-					tempora libero exercitationem.
+					En cinco años Unicampo App sera reconocida como la plataforma lider de intercambio comercial a nivel nacional. Rentable
+					y sostenida en el medio gracias a su accesiblidad, facilidad de uso, alianzas estrategicas y beneficio para sus
+					usuarios, llegando con un solo click incluso a los lugares mas alejados del campo y la ciudad.
 				</p>
 			</div>
 		</div>
@@ -43,7 +33,7 @@
 				<p class="description">
 					Soy un chico de 17 años que vive en Colombia. Mi hobbie desde pequeño suempre fueron los videojuegos y la programacion,
 					en esta última tengo experiencia en los lenguajes de programacion Python, C++, C#, Java, Javascript y Haskell, mi mayor
-					area de conociento es el desarrollo frontend con frameworks como VueJs, ReactJs y Svelt
+					area de conociento es el desarrollo frontend con frameworks como VueJs, ReactJS y Svelt
 				</p>
 				<div class="favorite-apps">
 					<h3>Favorite Apps</h3>
@@ -89,7 +79,7 @@ import Navbar from "@/components/Navbar.vue";
 	max-width: 1024px;
 
 	background-color: var(--bg-color-dark);
-	padding: 80px 0px;
+	padding: 80px 0px 20px 0px;
 	margin-top: 40px;
 
 	border-radius: 10px;
@@ -143,7 +133,7 @@ import Navbar from "@/components/Navbar.vue";
 	grid-template-rows: 170px 90px auto 86px;
 	width: 70%;
 	max-width: 440px;
-	height: 500px;
+	height: 560px;
 }
 
 .member-div .image-container {

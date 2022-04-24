@@ -2,9 +2,9 @@
 	<div class="carrousel-container">
 		<h1 class="carrousel-title">Por mas productos del campo!</h1>
 		<div class="cards-container">
-			<Card :value="15" title="Apple" delivery="Unicampo" image="./shop/apple.png" :scale="1" />
-			<Card :value="20" title="Apple" delivery="Unicampo" image="./shop/carrot.png" :scale="1.2" />
-			<Card :value="10" title="Apple" delivery="Unicampo" image="./shop/potato.png" :scale="1.25" />
+			<Card :value="15" title="Manzana" delivery="Unicampo" image="./shop/apple.png" :scale="1" />
+			<Card :value="20" title="Zanahoria" delivery="Unicampo" image="./shop/carrot.png" :scale="1.2" />
+			<Card :value="10" title="Papa" delivery="Unicampo" image="./shop/potato.png" :scale="1.25" />
 		</div>
 	</div>
 </template>

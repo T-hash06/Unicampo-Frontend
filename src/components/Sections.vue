@@ -1,8 +1,8 @@
 <template>
 	<div class="main-sections-container">
-		<ProductSection title="Section" image="./shop/fruits.png" :scale="1.18" />
-		<ProductSection title="Section" image="./shop/vegetables.png" :scale="1.22" reverse />
-		<ProductSection title="Section" image="./shop/meat.png" :scale="1.21" />
+		<ProductSection title="Frutas" image="./shop/fruits.png" :scale="1.18" />
+		<ProductSection title="Verduras" image="./shop/vegetables.png" :scale="1.22" reverse />
+		<ProductSection title="Productos animales" image="./shop/meat.png" :scale="1.21" />
 	</div>
 </template>
 
