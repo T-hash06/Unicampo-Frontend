@@ -2,7 +2,7 @@
 	<div class="main-comment-container">
 		<h1 class="comment-title">"{{ title }}"</h1>
 		<p class="comment-text">
-			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum corporis itaque quae eveniet deserunt aut.
+			{{ content }}
 		</p>
 		<div class="stars-container">
 			<iconStar v-for="star in filledStars" :key="star" filled />
@@ -18,6 +18,7 @@ import iconStar from "@/components/icons/iconStar.vue";
 
 const props = defineProps({
 	title: { type: String, default: "Comment Title" },
+	content: { type: String, default: "Default Content" },
 	autor: { type: String, default: "Comment Autor" },
 	stars: { type: Number, default: 0 },
 });

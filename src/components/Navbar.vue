@@ -1,10 +1,10 @@
 <template>
 	<div class="main-navbar-container">
-		<a href="#" class="logo-container"><img src="@/assets/logo.svg" alt="" class="logo" /></a>
+		<a href="#" class="logo-container"><img src="@/assets/t_logo.svg" alt="" class="logo" /></a>
 		<div class="links-container">
-			<router-link class="link" to="Home">Home</router-link>
-			<router-link class="link" to="About">About</router-link>
-			<router-link class="link" to="Contact">Contact</router-link>
+			<router-link class="link" to="Home">Inicio</router-link>
+			<router-link class="link" to="About">Nosotros</router-link>
+			<router-link class="link" to="Contact">Contacto</router-link>
 		</div>
 		<div class="buttons-container">
 			<rect-button class="button" content="Login"></rect-button>
@@ -43,7 +43,7 @@ const nombre = "test";
 .main-navbar-container .logo {
 	justify-self: center;
 	align-self: center;
-	width: 100%;
+	width: 85%;
 }
 
 .main-navbar-container .links-container {

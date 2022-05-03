@@ -4,9 +4,7 @@
 			<img class="card-image" :src="image" />
 		</div>
 		<h1 class="card-title">{{ title }}</h1>
-		<p class="card-description">
-			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit illum deserunt voluptatibus, laborum temporibus neque
-		</p>
+		<p class="card-description">{{ description }}</p>
 		<div class="card-options">
 			<h3 class="card-option-title">Quantity</h3>
 			<h3 class="card-option-title">Total</h3>
@@ -20,7 +18,7 @@
 			<h6 class="total-text">$ {{ total }}</h6>
 			<h6 class="delivery-text">{{ delivery }}</h6>
 		</div>
-		<RectButton class="card-button" content="Buy" main />
+		<RectButton class="card-button" content="Comprar" main />
 	</div>
 </template>
 
@@ -33,6 +31,7 @@ const props = defineProps({
 	value: { type: Number, default: 10 },
 	delivery: { type: String, default: "Default" },
 	image: { type: String, default: "src/assets/logo.svg" },
+	description: { type: String, default: "Description" },
 	scale: { type: Number, default: 1 },
 });
 
@@ -41,6 +40,7 @@ const quantity = ref(1);
 const total = computed(() => {
 	return props.value * quantity.value;
 });
+
 const update = (iter) => {
 	quantity.value += quantity.value <= 1 ? (iter < 0 ? 0 : iter) : iter;
 };

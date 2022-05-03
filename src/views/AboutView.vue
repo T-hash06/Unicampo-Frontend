@@ -3,7 +3,7 @@
 		<Navbar />
 		<div class="main-division">
 			<div class="mision-container">
-				<h1 class="title">- Nuentra Mision -</h1>
+				<h1 class="title">- Nuestra Mision -</h1>
 				<p class="text">
 					Somos una plataforma digital dedicada a facilitar el intercambio comercial entre los productores del campo colombiano,
 					los grandes distribuidores y las cadenas de mercado a nivel nacional. Nuestro proposito es conectar al campo con la
@@ -11,7 +11,7 @@
 				</p>
 			</div>
 			<div class="vision-container">
-				<h1 class="title">- Nuentra Vision -</h1>
+				<h1 class="title">- Nuestra Vision -</h1>
 				<p class="text">
 					En cinco años Unicampo App sera reconocida como la plataforma lider de intercambio comercial a nivel nacional. Rentable
 					y sostenida en el medio gracias a su accesiblidad, facilidad de uso, alianzas estrategicas y beneficio para sus

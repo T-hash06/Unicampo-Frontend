@@ -1,6 +1,6 @@
 <template>
 	<div class="main-footer-container">
-		<h1 class="footer-title">Follow Us!</h1>
+		<h1 class="footer-title">Siguenos!</h1>
 		<div class="footer-social">
 			<a href="#" class="link"><iconFacebook :scale="0.8" /></a>
 			<a href="#" class="link"><iconTwitter :scale="0.75" /></a>

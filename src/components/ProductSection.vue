@@ -8,10 +8,9 @@
 		<div class="section-text-container">
 			<h1 class="section-title">{{ title }}</h1>
 			<p class="section-description">
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et illo nulla dolores in, alias blanditiis nostrum eum amet
-				maiores sint ducimus nam perspiciatis, beatae commodi soluta, enim hic! Ab, veritatis!
+				{{ description }}
 			</p>
-			<RectButton content="Show more" class="section-button" main />
+			<RectButton content="Ver Mas" class="section-button" main />
 		</div>
 		<template v-if="reverse">
 			<div class="section-image-container">
@@ -26,6 +25,7 @@ import RectButton from "@/components/RectButton.vue";
 
 const props = defineProps({
 	title: { type: String, default: "Section Title" },
+	description: { type: String, default: "Description" },
 	image: { type: String, default: "src/assets/logo.svg" },
 	reverse: { type: Boolean, default: false },
 	scale: { type: Number, default: 1 },
